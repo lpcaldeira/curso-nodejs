@@ -14,17 +14,10 @@ mongoose.connect('mongodb://localhost:27017/curso-nodejs', {
 // Models devem ficar abaixo da conexão com o banco de dados
 requireDir('./src/models')
 
-const Product = mongoose.model('Product')
+// const Product = mongoose.model('Product')
 
-// req simboliza a requisição para o servidor
-// res simboliza a resposta dessa requisição
-app.get('/', (req, res) => {
-    Product.create({
-        title: 'Meu Github',
-        description: 'Aqui temos todos os meus repositórios.',
-        url: 'https://github.com/lpcaldeira?tab=repositories'
-    })
-    return res.send('Hello Descomplica')
-})
+// Use é como se fosse um coringa, ele recebe qualquer tipo de requisição:
+// POST, GET, PUT, etc
+app.use('/api', require('./src/routes'))
 
 app.listen(3001)

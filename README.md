@@ -30,3 +30,6 @@ Cada model tem que ter o Schema e nele teremos quais serão os campos que serão
 
 Instalando a biblioteca require-dir com `npm install require-dir`, ao invés de importarmos cada model que existir dentro da aplicação, podemos usar esta lib para importar todos automaticamente apenas passando a pasta onde eles estão. No caso `requireDir('./src/models')`.
 
+Então, criamos um label chamado `/api` para todas as requisições de forma que, quando executada a requisição, se não possuir este formato, retornará erro.
+
+Também criamos um arquivo chamado `routes.js` que possui todas as rotas que a aplicação irá possuir.
