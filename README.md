@@ -33,3 +33,8 @@ Instalando a biblioteca require-dir com `npm install require-dir`, ao invés de 
 Então, criamos um label chamado `/api` para todas as requisições de forma que, quando executada a requisição, se não possuir este formato, retornará erro.
 
 Também criamos um arquivo chamado `routes.js` que possui todas as rotas que a aplicação irá possuir.
+
+Adicionando permissão de recebimento de formato json e função para `Create` no mongodb.
+
+Incluindo requests via Postman.
+

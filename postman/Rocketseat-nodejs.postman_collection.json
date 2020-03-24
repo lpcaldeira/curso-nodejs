@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "d1690b58-136b-4907-b2b5-eaaa9b869c7e",
+		"name": "Rocketseat-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}products",
+					"host": [
+						"{{localhost}}products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}products",
+					"host": [
+						"{{localhost}}products"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
