@@ -20,14 +20,83 @@
 			"response": []
 		},
 		{
-			"name": "Create",
+			"name": "Detail",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
+					"raw": "{{localhost}}products/5e796cb220f0dd18747d260a",
+					"host": [
+						"{{localhost}}products"
+					],
+					"path": [
+						"5e796cb220f0dd18747d260a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"novo registro\",\n\t\"description\": \"nova descrição\",\n\t\"url\": \"novo github\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
 					"raw": "{{localhost}}products",
 					"host": [
 						"{{localhost}}products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"novo registro atualizado\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}products/5e7975580bfa1e10e006e496",
+					"host": [
+						"{{localhost}}products"
+					],
+					"path": [
+						"5e7975580bfa1e10e006e496"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}products/5e7975580bfa1e10e006e496",
+					"host": [
+						"{{localhost}}products"
+					],
+					"path": [
+						"5e7975580bfa1e10e006e496"
 					]
 				}
 			},
