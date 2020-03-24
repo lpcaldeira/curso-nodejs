@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/lpcaldeira/curso-nodejs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

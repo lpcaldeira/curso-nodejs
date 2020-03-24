@@ -21,3 +21,12 @@ Após fazer o download, abra-o e crie uma conection informando o nome, localhost
 Ali vamos conseguir ver as bases de dados, os usuários, etc.
 
 Se você desligar o pc ou reiniciar, essa instância vai cair e ficar com status EXITED mas você pode subir ela novamente com o comando `docker start instancia_mongodb`.
+
+Agora vamos instalar o mongoose com o comando `npm install mongoose`. O que é isso? Ele é um ORM. Ao invés de você utilizar os SELECT, INSERT, etc, a gente sempre utiliza código JS para fazer tudo isso. Ele faz um Object Relational Mapping para facilitar trabalhar com qualquer banco de dados sem precisar se adaptar aos comandos de cada uma.
+
+Agora vamos começar criando os models.
+
+Cada model tem que ter o Schema e nele teremos quais serão os campos que serão salvos no banco de dados
+
+Instalando a biblioteca require-dir com `npm install require-dir`, ao invés de importarmos cada model que existir dentro da aplicação, podemos usar esta lib para importar todos automaticamente apenas passando a pasta onde eles estão. No caso `requireDir('./src/models')`.
+
