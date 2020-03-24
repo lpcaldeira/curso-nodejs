@@ -39,3 +39,8 @@ Adicionando permissão de recebimento de formato json e função para `Create` n
 Incluindo requests via Postman.
 
 Continuando a criar o crud que falta. Detail, Update e Delete.
+
+A próxima etapa será criar uma paginação para os registros.
+
+Para isso, vou multiplicar o primeiro registro 20 vezes e instalar o módulo `npm install mongoose-paginate`.
+

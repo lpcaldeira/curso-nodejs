@@ -11,9 +11,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{localhost}}products",
+					"raw": "{{localhost}}products/?page=2",
 					"host": [
 						"{{localhost}}products"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
 					]
 				}
 			},
@@ -43,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\": \"novo registro\",\n\t\"description\": \"nova descrição\",\n\t\"url\": \"novo github\"\n}",
+					"raw": "{\n    \"title\": \"Meu Github\",\n    \"description\": \"Aqui temos todos os meus repositórios.\",\n    \"url\": \"https://github.com/lpcaldeira?tab=repositories\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
