@@ -38,3 +38,4 @@ Adicionando permissão de recebimento de formato json e função para `Create` n
 
 Incluindo requests via Postman.
 
+Continuando a criar o crud que falta. Detail, Update e Delete.
